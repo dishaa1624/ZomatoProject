@@ -75,14 +75,34 @@ nav
 .menu_head
 {
     text-align: center;
+    padding: 5px;
+    font-size: 30px;
+}
+.explore_menu_container
+{
+    margin-top: 50px;
 }
 .menu_box
 {
     width: 100%;
+    background-color: white;
+    border-radius: 8px;
+    margin: 15px 0;
 }
 .food_image
 {
     width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+.food_menu_card_description
+{
+    padding: 20px;
+}
+.button_view_more
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 @media(min-width: 768px)
 {
