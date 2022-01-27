@@ -81,6 +81,7 @@ nav
 .explore_menu_container
 {
     margin-top: 50px;
+    position: relative;
 }
 .menu_box
 {
@@ -96,7 +97,7 @@ nav
 }
 .food_menu_card_description
 {
-    padding: 20px;
+    padding: 10px;
 }
 .button_view_more
 {
@@ -104,6 +105,7 @@ nav
     display: flex;
     justify-content: center;
 }
+
 @media(min-width: 768px)
 {
     .navbar_brand
@@ -132,6 +134,33 @@ nav
     .hero_text
     {
         font-size: 25px;
+    }
+    .explore_menu_lists
+    {
+        display: flex;
+        gap: 8px;
+        margin-top: 30px;
+    }
+    #pizza
+    {
+        margin-top: -15px;
+        margin-bottom: 40px;
+    }
+    .explore_menu_bg
+    {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-image:linear-gradient(
+            to right,
+            #ff512f 0%,
+            #dd2476 51%,
+            #ff512f 100%
+        );
+        z-index: -3;
+        transform: skewY(-5deg);
     }
     
 }
@@ -196,5 +225,14 @@ nav
     .hero_text
     {
         font-size: 40px;
+    }
+    .explore_menu_lists
+    {
+        gap: 60px;
+        padding: 0 40px;
+    }
+    .menu_head
+    {
+        font-size: 50px;
     }
 }
