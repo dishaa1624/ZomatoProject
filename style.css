@@ -42,8 +42,8 @@ nav
 }
 .logo
 {
-    height: 40px;
-    width: 80px;
+    height: 80px;
+    width: 120px;
 }
 .hero_container
 {
@@ -105,7 +105,135 @@ nav
     display: flex;
     justify-content: center;
 }
+.restraunt_grid_row1,
+.restraunt_grid_row2
+{
+    width: 100%;
+    display: flex;
+    gap: 4px;
+}
+.restraunt_grid_row1
+{
+    align-items: baseline;
+    margin-bottom: 4px;
+}
+.restraunt1_image,
+.restraunt2_image
+{
+    gap: 4px;
+}
+.restraunt1,
+.restraunt2,
+.restraunt3,
+.restraunt4
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+}
 
+.restraunt1_image,
+.restraunt4_image
+{
+    width: 150px;
+    height: 130px;
+    border-radius: 7px;
+}
+
+
+.restraunt2_image,
+.restraunt3_image
+{
+    width: 190px;
+    height: 180px;
+    border-radius: 7px;
+}
+.restraunt_grid
+{
+    overflow-x: hidden;
+}
+.notification_head
+{
+    margin-top: 10px;
+    width: 100%;
+}
+.notification_input
+{
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+}
+.notification_textbox
+{
+    border: red solid 0.5px;
+    border-radius: 3px;
+    
+}
+#n_button
+{
+    height: 30px;
+    width: 120px;
+}
+.notification_text
+{
+    text-align: center;
+    font-size: 25px;
+}
+.notification_img_container
+{
+    margin-top: 40px;
+    width: 100%;
+    position: relative;
+    z-index: -3;
+}
+.image_text
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
+.notification_img
+{
+    border-radius: 5px;
+    width: 100%;
+}
+.footer_container
+{
+    background-image:linear-gradient(
+            to right,
+            #ff512f 0%,
+            #dd2476 51%,
+            #ff512f 100%
+        );
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    color: white;
+    margin-top: 50px;
+    border-radius: 7px;
+    height: 90px;
+    padding: 10px;
+
+}
+.footer_image_container
+{
+    width: 100%;
+
+}
+.footer_text_container
+{
+    
+    align-items: center;
+}
+.footer_image_container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 @media(min-width: 768px)
 {
     .navbar_brand
@@ -162,6 +290,18 @@ nav
         z-index: -3;
         transform: skewY(-5deg);
     }
+    .restraunt_text
+    {
+        font-size: 40px;
+    }
+    .restaraunt_container
+    {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    
     
 }
 @media(min-width: 1020px)
@@ -195,6 +335,22 @@ nav
     .hero_text
     {
         font-size: 30px;
+    }
+    .restraunt1_image,
+    .restraunt4_image
+    {
+        width: 200px;
+        height: 150px;
+        border-radius: 7px;
+    }
+    
+    
+    .restraunt2_image,
+    .restraunt3_image
+    {
+        width: 250px;
+        height: 200px;
+        border-radius: 7px;
     }
 
 }
@@ -234,5 +390,14 @@ nav
     .menu_head
     {
         font-size: 50px;
+    }
+    .restraunt_text
+    {
+        font-size: 50px;
+    }
+    .restaraunt_container
+    {
+        gap: 10px;
+        margin-top: 5px;
     }
 }
